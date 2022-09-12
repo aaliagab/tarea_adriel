@@ -24,7 +24,7 @@ ChartJS.register(
   Filler
 );
 
-let ventas = [];
+export let ventas = [];
 const labels = ["January", "February", "March", "April"];
 
 function llenarVentas(marca){
