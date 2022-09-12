@@ -3,7 +3,7 @@ import { Marca } from "../productos/Marca";
 import { Producto } from "../productos/Producto";
 import { Venta } from "../productos/VentaMarcas";
 
-export let categorias:Categoria[] = [
+export var categorias:Categoria[] = [
     {nombre:"Ropa",productos:[]},{nombre:"Telefonos",productos:[]}
 ];
 
@@ -18,12 +18,12 @@ categorias[0].productos.push(productos[1]);
 categorias[1].productos.push(productos[2]);
 
 export let marcas:Marca[] = [
-    {nombre:"Jeans",producto:productos[0]},
-    {nombre:"Tommy",producto:productos[0]},
-    {nombre:"Lacoste",producto:productos[1]},
-    {nombre:"Calvin Klain",producto:productos[1]},
-    {nombre:"Samsung Galaxy",producto:productos[2]},
-    {nombre:"Xiaomi",producto:productos[2]}
+    {nombre:"Jeans",producto:productos[0],ventas:[]},
+    {nombre:"Tommy",producto:productos[0],ventas:[]},
+    {nombre:"Lacoste",producto:productos[1],ventas:[]},
+    {nombre:"Calvin Klain",producto:productos[1],ventas:[]},
+    {nombre:"Samsung Galaxy",producto:productos[2],ventas:[]},
+    {nombre:"Xiaomi",producto:productos[2],ventas:[]}
 ];
 productos[0].marcas.push(marcas[0]);
 productos[0].marcas.push(marcas[1]);
