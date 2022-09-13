@@ -45,14 +45,13 @@ const options = {
 
 
 export default function BarChart() {    
-  const data = useMemo(function () {  
-     
+  const data = useMemo(function () { 
     return {
       datasets: [
         { 
           label: "Mis datos",
           tension: 0.3,
-          data: llenarVentas,
+          data: llenarVentas(),
           borderColor: "rgb(75, 192, 192)",
           backgroundColor: "rgba(75, 192, 192, 0.3)",
         },
